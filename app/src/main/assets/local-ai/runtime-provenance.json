@@ -1,0 +1,187 @@
+{
+  "release": "b11960",
+  "archive_sha256": "77d9f19fad41d6d8efbc29bcc1c1ab60a605018564cfc32203892eb1973ba4b9",
+  "libraries": [
+    {
+      "source": "libggml-base.so",
+      "destination": "libggml-base.so",
+      "sha256": "b2795a6534b778fd7744fdcf1a6575dc179e44e1c0c2c2b7bba171aa71babc18",
+      "bytes": 8201816,
+      "dependencies": [
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv8.0_1.so",
+      "destination": "libggml-cpu-android_armv8.0_1.so",
+      "sha256": "8444a642f990b02d66fb44b624633775fa60501d01d8f6661cae89e10eb8730e",
+      "bytes": 4768648,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv8.2_1.so",
+      "destination": "libggml-cpu-android_armv8.2_1.so",
+      "sha256": "2b5a90b6f380f6ebe65f72189818ae8a319bd070120b0c25b0891075801f9781",
+      "bytes": 5061720,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv8.2_2.so",
+      "destination": "libggml-cpu-android_armv8.2_2.so",
+      "sha256": "98de274ec7dbf695488f04b4537d5d725bcc3a49ae12852240a0e979f4015a4c",
+      "bytes": 5046376,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv8.6_1.so",
+      "destination": "libggml-cpu-android_armv8.6_1.so",
+      "sha256": "cd169184e34efa1b28c1f2dd33b636bf31b133b1f1f16498563458b41cfabe5f",
+      "bytes": 5156592,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv9.0_1.so",
+      "destination": "libggml-cpu-android_armv9.0_1.so",
+      "sha256": "a759c7ca00d2dd54fe07cb9d2d613ab1896369854966f08d525196fb69d08af1",
+      "bytes": 5196640,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv9.2_1.so",
+      "destination": "libggml-cpu-android_armv9.2_1.so",
+      "sha256": "718857c50cf135f2dd6bcb9eb41f1604180c502f245ce5da9d8033918abaa572",
+      "bytes": 5196640,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml-cpu-android_armv9.2_2.so",
+      "destination": "libggml-cpu-android_armv9.2_2.so",
+      "sha256": "4666637a356bb1bcdbb5aa48e59fe0fcbe7df5602e77ec4c82b33cbaad6d4123",
+      "bytes": 5196640,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libggml.so",
+      "destination": "libggml.so",
+      "sha256": "d9455751e05d2be8d01f3275d0fd8fb3e2d22fa088884dc1d60fbec3daedcbf1",
+      "bytes": 4930232,
+      "dependencies": [
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libllama-common.so",
+      "destination": "libllama-common.so",
+      "sha256": "d6b86c8619df58f3195bc0ca8b77f2bd12073e7b1e9d253190710cbfcf336c36",
+      "bytes": 89089928,
+      "dependencies": [
+        "libllama.so",
+        "libggml.so",
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libllama-server-impl.so",
+      "destination": "libllama-server-impl.so",
+      "sha256": "6da8944d6a56e7df6100375af6badd1a6a016fd794c44e6955f5881b5138d834",
+      "bytes": 68278176,
+      "dependencies": [
+        "libllama-common.so",
+        "libmtmd.so",
+        "libllama.so",
+        "libggml.so",
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libllama.so",
+      "destination": "libllama.so",
+      "sha256": "f316c70c8835e4737bf8f43f40e187023ec24ee43e81cc99ca3f583aea9ce68b",
+      "bytes": 38856464,
+      "dependencies": [
+        "libggml.so",
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "libmtmd.so",
+      "destination": "libmtmd.so",
+      "sha256": "87cbd37736ac6e6ace2588282a6d953e0c80f66ce8b0821a7d6575d9ba54ef70",
+      "bytes": 20758128,
+      "dependencies": [
+        "libllama.so",
+        "libggml.so",
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    {
+      "source": "llama-server",
+      "destination": "libguidelight_lfm_server.so",
+      "sha256": "db82377125f69e87c06b402bba1af072e2a4c4cc9945946e4d6378cc213a84d7",
+      "bytes": 7192,
+      "dependencies": [
+        "libllama-server-impl.so",
+        "libllama-common.so",
+        "libmtmd.so",
+        "libllama.so",
+        "libggml.so",
+        "libggml-base.so",
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    }
+  ]
+}

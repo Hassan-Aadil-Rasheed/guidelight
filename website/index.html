@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a24">
+  <meta name="description" content="GuideLight is an experimental accessibility-first Android walking companion for blind and low-vision people.">
+  <meta property="og:title" content="GuideLight — hear the route ahead">
+  <meta property="og:description" content="Voice-led walking guidance, camera awareness and haptic alerts in one experimental Android app.">
+  <meta property="og:type" content="website">
+  <title>GuideLight — hear the route ahead</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="GuideLight home">
+      <svg class="brand-mark" viewBox="0 0 108 108" aria-hidden="true">
+        <rect width="108" height="108" rx="28" fill="#071a24"/>
+        <path fill="#ffd84d" d="M54 14a40 40 0 1 0 0 80 40 40 0 0 0 0-80Zm0 14a26 26 0 1 1 0 52 26 26 0 0 1 0-52Z"/>
+        <path fill="#ffd84d" d="M49 36h10v36H49z"/>
+      </svg>
+      <span>GuideLight</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open navigation</span>
+      <span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#safety">Safety</a>
+      <a href="#install">Install</a>
+      <a class="nav-download" href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Experimental Android project · v0.22.3</p>
+        <h1 id="hero-title">Hear the route.<br><span>Feel what’s ahead.</span></h1>
+        <p class="hero-lede">GuideLight brings voice-led walking directions, camera awareness and vibration cues into one accessibility-first companion for blind and low-vision people.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">
+            Download for Android
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+          </a>
+          <a class="button button-quiet" href="#how-it-works">Explore the project</a>
+        </div>
+        <p class="compatibility">Android 8.0+ · ARM64 · 180.5 MB · APK</p>
+      </div>
+
+      <div class="signal-stage reveal" aria-label="Illustration of a spoken destination becoming walking guidance">
+        <div class="voice-card">
+          <span class="voice-label">You say</span>
+          <strong>“Nearest chemist”</strong>
+          <div class="waveform" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <svg class="route-line" viewBox="0 0 640 540" aria-hidden="true">
+          <path class="route-shadow" d="M100 80C220 120 170 230 320 250s210 60 145 175-190 8-250 65"/>
+          <path class="route-path" d="M100 80C220 120 170 230 320 250s210 60 145 175-190 8-250 65"/>
+        </svg>
+        <div class="guidance-card guidance-one">
+          <span class="turn-icon">↰</span>
+          <span><small>Next direction</small><strong>Turn left in 40 m</strong></span>
+        </div>
+        <div class="guidance-card guidance-two">
+          <span class="pulse-icon" aria-hidden="true"></span>
+          <span><small>Camera alert</small><strong>Object ahead, low</strong></span>
+        </div>
+        <div class="arrival-pin"><span></span><b>Destination</b></div>
+      </div>
+    </section>
+
+    <aside class="safety-strip" aria-label="Important safety notice">
+      <div class="safety-icon" aria-hidden="true">!</div>
+      <p><strong>A secondary aid, never a replacement.</strong> Keep using your cane, guide dog, mobility training and normal road-safety judgement.</p>
+      <a href="#safety">Read safety limits</a>
+    </aside>
+
+    <section class="section how" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">One continuous flow</p>
+        <h2 id="how-title">From your voice to the path ahead.</h2>
+        <p>GuideLight keeps destination search, walking guidance and camera alerts together, so you can stay in one app while moving.</p>
+      </div>
+      <ol class="journey">
+        <li class="journey-step reveal">
+          <div class="step-number">1</div>
+          <div class="step-visual speak-visual" aria-hidden="true">
+            <div class="mic-orbit"><span>●</span></div>
+            <p>“Take me to India Gate”</p>
+          </div>
+          <h3>Speak naturally</h3>
+          <p>Use Wispr Flow, type a destination, or ask for a daily place such as “nearest toilet” or “shops near me”.</p>
+        </li>
+        <li class="journey-step reveal">
+          <div class="step-number">2</div>
+          <div class="step-visual choose-visual" aria-hidden="true">
+            <div><b>1</b><span>India Gate<br><small>2.4 km away</small></span></div>
+            <div><b>2</b><span>India Gate Lawns<br><small>2.7 km away</small></span></div>
+          </div>
+          <h3>Choose with your voice</h3>
+          <p>Nearby results are read aloud with numbers, distances and short addresses. Say “choose suggestion one”.</p>
+        </li>
+        <li class="journey-step reveal">
+          <div class="step-number">3</div>
+          <div class="step-visual walk-visual" aria-hidden="true">
+            <svg viewBox="0 0 220 130"><path d="M10 110C55 110 58 55 105 62s60-39 105-39"/><circle cx="105" cy="62" r="7"/><path class="arrow" d="m201 15 9 8-12 4"/></svg>
+            <span>Continue for 120 m</span>
+          </div>
+          <h3>Walk with guidance</h3>
+          <p>Hear GPS-triggered turns while the rear camera checks the centre of the view for possible obstacles.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section feature-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading section-heading-light reveal">
+        <p class="eyebrow">Built around listening</p>
+        <h2 id="features-title">Useful information, without visual clutter.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4v6a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4Z"/><path d="M5 11v1a7 7 0 0 0 14 0v-1M12 19v3M9 22h6"/></svg>
+          </div>
+          <p class="feature-kicker">Voice first</p>
+          <h3>Control the walk without hunting for buttons.</h3>
+          <p>Speak destinations, choose places, repeat directions, scan surroundings, show the map or end the walk. The optional GuideLight button can operate Wispr Flow with two short presses.</p>
+          <div class="command-cloud" aria-label="Example voice commands">
+            <span>“Scan surroundings”</span><span>“Repeat directions”</span><span>“Show map”</span><span>“End walk”</span>
+          </div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <p class="feature-kicker">Camera awareness</p>
+          <h3>Spoken position, not false precision.</h3>
+          <p>Alerts describe objects as left, ahead or right and high, middle or low in the image. GuideLight does not claim real-world distance.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 16V8m4 11V5m4 17V2m4 17V5m4 11V8"/></svg>
+          </div>
+          <p class="feature-kicker">Sound + haptics</p>
+          <h3>Warnings you can hear and feel.</h3>
+          <p>Rate-limited spoken alerts and distinct vibration patterns reduce repetition while keeping urgent camera cautions noticeable.</p>
+        </article>
+        <article class="feature-card feature-wide reveal">
+          <div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-5 7-11a7 7 0 1 0-14 0c0 6 7 11 7 11Z"/><circle cx="12" cy="10" r="2"/></svg>
+            </div>
+            <p class="feature-kicker">Nearby places</p>
+            <h3>Ask for the places that matter every day.</h3>
+            <p>Search across 53 categories, including chemists, clinics, toilets, drinking water, transport, temples, masjids and churches.</p>
+          </div>
+          <div class="place-list" aria-label="Example nearby place categories">
+            <span>Transport</span><span>Healthcare</span><span>Toilets</span><span>Drinking water</span><span>Places of worship</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accessibility" aria-labelledby="access-title">
+      <div class="access-copy reveal">
+        <p class="eyebrow">Accessibility is the interface</p>
+        <h2 id="access-title">Designed for TalkBack, touch and voice from the start.</h2>
+        <p>GuideLight uses large controls, scalable text, clear focus labels, high contrast and spoken status updates. It stays in the foreground so the app can tell you what it is doing.</p>
+        <ul class="check-list">
+          <li>Meaningful TalkBack labels</li>
+          <li>60 dp minimum primary controls</li>
+          <li>High-contrast dark interface</li>
+          <li>Voice commands throughout a walk</li>
+        </ul>
+      </div>
+      <div class="phone-shell reveal" aria-label="GuideLight destination screen preview">
+        <div class="phone-speaker"></div>
+        <div class="phone-screen">
+          <div class="phone-top"><span class="mini-logo">G</span><b>GuideLight</b><span>?</span></div>
+          <p class="phone-label">PLAN YOUR WALK</p>
+          <h3>Where to?</h3>
+          <p>Say a place, address or “nearest toilet”.</p>
+          <div class="phone-card">
+            <div class="phone-button"><span>◉</span><b>Speak destination<small>Voice input · Wispr Flow</small></b><span>→</span></div>
+            <div class="phone-input"><span>⌖</span><span>Destination<br><small>Place or address</small></span></div>
+            <div class="phone-find">⌕ &nbsp; Find place</div>
+          </div>
+          <div class="phone-status"><span>◉</span> Location ready</div>
+          <div class="phone-home">⌂ &nbsp; <b>Home navigation</b><span>→</span></div>
+          <p class="phone-safety">♿ &nbsp; Keep using your cane or guide dog.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section safety-section" id="safety" aria-labelledby="safety-title">
+      <div class="safety-copy reveal">
+        <p class="eyebrow">Know the limits</p>
+        <h2 id="safety-title">Experimental support, clearly described.</h2>
+        <p>GuideLight is an early prototype. It has not been safety validated and must only supplement established mobility tools and training.</p>
+      </div>
+      <div class="limits-grid">
+        <article class="limit-card reveal"><span>01</span><h3>No depth measurement</h3><p>Camera alerts use position and apparent image size. They cannot tell the real distance to an object.</p></article>
+        <article class="limit-card reveal"><span>02</span><h3>Generic object detection</h3><p>The current model can miss curbs, potholes, branches, vehicles and other important hazards.</p></article>
+        <article class="limit-card reveal"><span>03</span><h3>No crossing decisions</h3><p>GuideLight does not interpret traffic lights or decide when roads and crossings are safe.</p></article>
+        <article class="limit-card reveal"><span>04</span><h3>Foreground and online</h3><p>Search, maps, routing and Wispr Flow need internet. Scanning runs only while GuideLight is visible.</p></article>
+      </div>
+      <div class="safety-rule reveal">
+        <span aria-hidden="true">♿</span>
+        <p><strong>Always continue using a cane or guide dog.</strong><br>Use GuideLight only as a secondary source of information during supervised testing.</p>
+      </div>
+    </section>
+
+    <section class="section install-section" id="install" aria-labelledby="install-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Install on Android</p>
+        <h2 id="install-title">Three steps to try the prototype.</h2>
+      </div>
+      <ol class="install-steps">
+        <li class="reveal"><span>1</span><div><h3>Download the APK</h3><p>Use your Android phone to download GuideLight 0.22.3 from this website.</p></div></li>
+        <li class="reveal"><span>2</span><div><h3>Allow this installation</h3><p>Android may ask you to allow installs from your browser. Review the prompt, then continue.</p></div></li>
+        <li class="reveal"><span>3</span><div><h3>Grant only what you use</h3><p>Camera supports scanning; precise location supports nearby search and walking directions. Wispr Flow is installed separately for voice input.</p></div></li>
+      </ol>
+      <div class="permission-note reveal">
+        <h3>Permissions, in plain language</h3>
+        <div><span>Camera</span><p>Checks the visible path while the app is open.</p></div>
+        <div><span>Location</span><p>Finds nearby places and follows a walking route.</p></div>
+        <div><span>Internet</span><p>Loads search results, routes and map tiles.</p></div>
+        <div><span>Vibration</span><p>Provides haptic warning patterns.</p></div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download" aria-labelledby="download-title">
+      <div class="download-glow" aria-hidden="true"></div>
+      <div class="download-copy reveal">
+        <p class="eyebrow">Current release</p>
+        <h2 id="download-title">Take GuideLight with you.</h2>
+        <p>Download the latest experimental Android build. By installing, you acknowledge the safety notice and current limitations above.</p>
+      </div>
+      <div class="release-card reveal">
+        <div class="release-top">
+          <svg class="release-mark" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="28" fill="#071a24"/><path fill="#ffd84d" d="M54 14a40 40 0 1 0 0 80 40 40 0 0 0 0-80Zm0 14a26 26 0 1 1 0 52 26 26 0 0 1 0-52Z"/><path fill="#ffd84d" d="M49 36h10v36H49z"/></svg>
+          <div><p>GuideLight for Android</p><h3>Version 0.22.3</h3><span>Released 31 October 2026</span></div>
+        </div>
+        <dl class="release-meta">
+          <div><dt>Package</dt><dd>APK</dd></div>
+          <div><dt>Size</dt><dd>180.5 MB</dd></div>
+          <div><dt>Requires</dt><dd>Android 8.0+</dd></div>
+          <div><dt>Architecture</dt><dd>ARM64</dd></div>
+        </dl>
+        <a class="button button-primary button-download" href="https://vkhzo6bw9repcvrg.public.blob.vercel-storage.com/releases/GuideLight-0.22.3.apk">
+          Download GuideLight 0.22.3
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+        </a>
+        <div class="checksum">
+          <span>SHA-256</span>
+          <code id="checksum-value">3111f4a090af695ca695f6f8cce3456f1383b9c678d09f467f7184fc6928ee58</code>
+          <button id="copy-checksum" type="button">Copy</button>
+        </div>
+        <p class="release-note">This is a development-signed experimental build, distributed outside Google Play.</p>
+      </div>
+    </section>
+
+    <section class="project-section" aria-labelledby="project-title">
+      <div class="project-copy reveal">
+        <p class="eyebrow">Under the hood</p>
+        <h2 id="project-title">An open, testable Android prototype.</h2>
+        <p>Built with Kotlin, Jetpack Compose, CameraX, ML Kit, MapLibre and OpenStreetMap services. On-device policies keep speech, camera alerts and route updates from competing for attention.</p>
+      </div>
+      <div class="tech-stack reveal" aria-label="Project technology">
+        <span>Kotlin</span><span>Jetpack Compose</span><span>CameraX</span><span>ML Kit</span><span>MapLibre</span><span>ARCore</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top" aria-label="GuideLight home">
+      <svg class="brand-mark" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="28" fill="#071a24"/><path fill="#ffd84d" d="M54 14a40 40 0 1 0 0 80 40 40 0 0 0 0-80Zm0 14a26 26 0 1 1 0 52 26 26 0 0 1 0-52Z"/><path fill="#ffd84d" d="M49 36h10v36H49z"/></svg>
+      <span>GuideLight</span>
+    </a>
+    <p>Experimental accessibility technology for blind and low-vision pedestrians.</p>
+    <div class="footer-links"><a href="#safety">Safety</a><a href="#install">Install</a><a href="#download">Download</a></div>
+    <p class="copyright">© 2026 GuideLight project. Map data © OpenStreetMap contributors.</p>
+  </footer>
+</body>
+</html>

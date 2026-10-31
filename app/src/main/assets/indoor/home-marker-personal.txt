@@ -1,0 +1,5 @@
+Additional reference selected by the user for this local prototype.
+Source: the user's images.jpeg Earth photograph, unchanged.
+Expected physical square width: 0.18 metres.
+Database identifier: home-earth-personal-18cm.
+Saved homes retain their reference identifier and cannot silently align to the other picture.

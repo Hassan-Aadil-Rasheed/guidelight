@@ -1,0 +1,22 @@
+[
+  {
+    "name": "libNativeRTABMap.so",
+    "sha256": "4223af2c95b7b70530c9e5d7f618bc08aabecd99bd966f6f3c0e57b08015a7d9"
+  },
+  {
+    "name": "libomp.so",
+    "sha256": "1c4db1866bef4228365dc2a44264f7452b9f7af35e100bcbecf05c24b02bfe6f"
+  },
+  {
+    "name": "libhuawei_arengine_impl.so",
+    "sha256": "00c02c68f1a6e6084ca0b4701affbe6b1abb2cf4bd73ddfb93b7b21f1bc55b1c"
+  },
+  {
+    "name": "libhuawei_arengine_jni.so",
+    "sha256": "b411440bebe7006456bcaa58e56e10f15c32cd8361f7fad269449f1d2cb95523"
+  },
+  {
+    "name": "libhuawei_arengine_ndk.so",
+    "sha256": "e428a6a9188f20c0c2b3a25fed2bdef46e4fd6086b1bcacad56b73f06a091f9a"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "checked": "2026-10-28",
+  "models": [
+    {
+      "repository": "LiquidAI/LFM3-VL-2B-GGUF",
+      "revision": "017b19da2dcffadb41d67745941f3d785f0d162f",
+      "files": [
+        {
+          "file": "LFM3-VL-2B-QAD-Q4_0.gguf",
+          "bytes": 1049615648,
+          "sha256": "621c455376cb96a20891697deb9975c6fb47dd5ea98ed3ad1f3b7e8f24f0b1e6"
+        },
+        {
+          "file": "mmproj-LFM3-VL-2B-F16.gguf",
+          "bytes": 378996032,
+          "sha256": "1d8e6e58eefc093e09d6332f081516e1ddbd5b35cfca7f35463fb270db230b1e"
+        },
+        {
+          "file": "mmproj-LFM3-VL-2B-Q8_0.gguf",
+          "bytes": 203031872,
+          "sha256": "c5c5b58d544a18da919172d2d0368090ea1a4a351b6feb7f8a326a264a5918ab"
+        }
+      ]
+    },
+    {
+      "repository": "LiquidAI/LFM3-1.7B-GGUF",
+      "revision": "4b423c332fd97961416f2e8b69467758fd27370d",
+      "files": [
+        {
+          "file": "LFM3-1.7B-QAD-Q4_0.gguf",
+          "bytes": 1049615680,
+          "sha256": "43a7d09a0e9cba91b63eb7052488b9564569bddfd65754d2e426465e572a7452"
+        }
+      ]
+    },
+    {
+      "repository": "LiquidAI/LFM2.5-VL-450M-GGUF",
+      "revision": "1abed04b6fe71314d8c446a1371c03d7c332266d",
+      "files": [
+        {
+          "file": "LFM2.5-VL-450M-Q4_0.gguf",
+          "bytes": 219311264,
+          "sha256": "6d2757dd0f0b98aea7dc90477bb5b3a0df1089be85ef92943f8cecb05121ccbf"
+        },
+        {
+          "file": "mmproj-LFM2.5-VL-450m-F16.gguf",
+          "bytes": 189126080,
+          "sha256": "51b458cfdbc736982145a35f798ce37611af0aab639e58b33473ba0c7815fd99"
+        },
+        {
+          "file": "mmproj-LFM2.5-VL-450m-Q8_0.gguf",
+          "bytes": 102815168,
+          "sha256": "ebfc428baa37efad8bae93864f914b2634a09009f91ad59f974fe1a1565d8561"
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "tag": "b11960",
+    "assets": [
+      "cudart-llama-b11960-bin-ubuntu-cuda-12.8-x64.tar.gz",
+      "cudart-llama-b11960-bin-ubuntu-cuda-13.4-arm64.tar.gz",
+      "cudart-llama-b11960-bin-ubuntu-cuda-13.4-x64.tar.gz",
+      "cudart-llama-bin-win-cuda-12.4-x64.zip",
+      "cudart-llama-bin-win-cuda-13.4-arm64.zip",
+      "cudart-llama-bin-win-cuda-13.4-x64.zip",
+      "llama-b11960-bin-android-arm64-snapdragon.tar.gz",
+      "llama-b11960-bin-android-arm64.tar.gz",
+      "llama-b11960-bin-linux-arm64-snapdragon.tar.gz",
+      "llama-b11960-bin-macos-arm64.tar.gz",
+      "llama-b11960-bin-macos-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-arm64.tar.gz",
+      "llama-b11960-bin-ubuntu-cuda-12.8-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-cuda-13.4-arm64.tar.gz",
+      "llama-b11960-bin-ubuntu-cuda-13.4-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-openvino-2026.4.1-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-rocm-10.0-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-s390x.tar.gz",
+      "llama-b11960-bin-ubuntu-sycl-fp16-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-sycl-fp32-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-vulkan-arm64.tar.gz",
+      "llama-b11960-bin-ubuntu-vulkan-x64.tar.gz",
+      "llama-b11960-bin-ubuntu-x64.tar.gz",
+      "llama-b11960-bin-win-cpu-arm64.zip",
+      "llama-b11960-bin-win-cpu-x64.zip",
+      "llama-b11960-bin-win-cuda-12.4-x64.zip",
+      "llama-b11960-bin-win-cuda-13.4-arm64.zip",
+      "llama-b11960-bin-win-cuda-13.4-x64.zip",
+      "llama-b11960-bin-win-opencl-adreno-arm64.zip",
+      "llama-b11960-bin-win-openvino-2026.4.1-x64.zip",
+      "llama-b11960-bin-win-rocm-10.0-x64.zip",
+      "llama-b11960-bin-win-sycl-x64.zip",
+      "llama-b11960-bin-win-vulkan-arm64.zip",
+      "llama-b11960-bin-win-vulkan-x64.zip",
+      "llama-b11960-ui.tar.gz",
+      "llama-b11960-xcframework.zip"
+    ],
+    "visionImplementationMerge": "19cce6919992fdffd92e0ac152caaf1e2b8f254e",
+    "releaseContainsVisionImplementation": true
+  }
+}

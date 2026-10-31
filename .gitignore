@@ -1,0 +1,40 @@
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+__pycache__/
+*.py[cod]
+.tools/
+.idea/
+local.properties
+google-maps.local.properties
+**/build/
+*.iml
+captures/
+.DS_Store
+
+# Local diagnostics, exports and installer packages
+/output/
+/captures/
+*.apk
+*.apk.sha256
+*.aab
+*.zip
+*.zip.sha256
+/TRANSFER-MANIFEST.json
+/MOVE_TO_NEW_COMPUTER.md
+
+# Signing identities and local credentials stay on this computer
+*.keystore
+*.jks
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+
+# Personal uploads and the unrelated image-editing helper on this laptop
+/enhanced_uploads/
+/tools/enhance_upload_images.py
+
